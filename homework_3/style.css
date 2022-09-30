@@ -1,0 +1,46 @@
+table {
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+table td, th {
+    height: 40px;
+    width: 100px;
+    vertical-align:middle;
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+}
+
+td.color {
+    background-color: rgba(230, 52, 135, 0.61);
+} 
+
+th.a {
+   background-color: #ffff9e;
+   text-align: center;
+
+}
+
+td.b {
+    background-color: hwb(120 24% 3% / 0.884);
+}
+
+td.c {
+    background-color: hwb(253 32% 9%);
+}
+
+td.d {
+    background-color: hsl(34, 80%, 50%);
+}
+
+td.f {
+    background-color: white; 
+    border-top: 1px solid black;
+    text-align: center;
+    line-height: 2;   
+}
+
+
