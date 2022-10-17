@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /* background: #1B2473; */
+}
+
+.form {
+    margin: 0;
+    width: calc(600 / 1440 * 100vw);
+    height: calc(412 / 1440 * 100vw);
+    margin-top: calc(82 / 1440 * 100vw);
+    margin-left: calc(412 / 1440 *100vw);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.form__title {
+    width: calc(115 / 1440 * 100vw);
+    height: calc(50 / 1440 * 100vw);
+    top: calc(112 / 1440 * 100vw);
+    margin-left: calc(242 / 1440 * 100vw);
+    color: #787878;
+  }
+
+.form__heading {
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    color: #787878;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+    /* top: calc(112 / 1440 * 100vw); */
+    /* margin-left: calc(242 / 1440 * 100vw); */
+    gap: calc(36 / 1440 * 100vw)
+}
+.form__email {
+    width: calc(510 / 1440 * 100vw);
+    height: calc(49 / 1440 * 100vw);
+    margin-top: calc(36 / 1440 * 100vw);
+    /* top:calc(112 / 1440 * 100vw); */
+    margin-left: calc(45 / 1440 * 100vw);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 2px solid rgba(120, 120, 120, 1);
+}
+
+.form__email > label {
+    width: calc(40 / 1440 * 100vw);
+    height: calc(16 / 1440 * 100vw);
+    margin-top: calc(53 / 1440 * 100vw);
+    /* margin-left: calc(53 / 1440 * 100vw); */
+    /* margin-top: calc(-19 / 1440 * 100vw); */
+    /* top: -19px; */
+   
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #787878;
+    color: rgba(120, 120, 120, 1);
+
+}
+
+.form__email > input {
+    font-size: 28px;
+    line-height: 36px;
+    outline: none;
+    border: none;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    color: #CCCCCC;
+    color: rgba(120, 120, 120, 1);
+    height: calc(36 / 1440 * 100vw);
+    left: calc(472 / 1440 * 100vw);
+    top: calc(201 / 1440 * 100vw)
+    
+    /* margin-top: calc(43 / 1440 * 100vw); */
+    /* padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 6px; */
+}
+.form__password {
+    width: calc(510 / 1440 * 100vw);
+    height: calc(49 / 1440 * 100vw);
+    /* margin-top: calc(32 / 1440 *100vw); */
+    top: calc(193 / 1440 * 100vw);
+    margin-left: calc(45 / 1440 * 100vw);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 2px solid rgba(120, 120, 120, 1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.form__password > label {
+    width: calc(56 / 1440 * 100vw);
+    height: calc(16 / 1440 * 100vw);
+    top: calc(13 / 1440 * 100vw);
+    left: calc(53 / 1440 * 100vw);
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #787878;
+    opacity: 0;
+}
+
+.form__password > input {
+    font-size: 28px;
+    line-height: 36px;
+    outline: none;
+    border: none;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    color: #CCCCCC;
+    /* padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 6px; */
+}
+
+.form__checkbox {
+    width: calc(312 / 1440 * 100vw);
+    height: calc(24 / 1440 * 100vw);
+    top: calc(258 / 1440 * 100vw);
+    left: calc(45 / 1440 * 100vw);
+}
+
+.form__button {
+   
+    width: calc(180 / 1440 * 100vw);
+    height: calc(52 / 1440 * 100vw);
+    margin-top: calc(52 / 1440 * 100vw);
+    margin-left: calc(210 / 1440 * 100vw);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(26, 34, 107, 1);
+    border-radius: 10px;
+    border: none;
+    font-family:'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+    justify-content: center;
+}
