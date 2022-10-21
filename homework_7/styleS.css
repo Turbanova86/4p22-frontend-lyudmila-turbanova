@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family:'Roboto', sans-serif;
     background: #1B2473;
+    height: 100vh;
 }
 
 .form {
@@ -31,8 +32,8 @@ body {
 
 .form__title-heading {
     font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
+    font-size:calc(50 / 1440 * 100vw);
+    line-height: calc(50 / 1440 * 100vw);
     margin: 0;
     color: #787878;
 }
@@ -44,11 +45,12 @@ body {
     top: calc(93 / 1440 * 100vw);
     left: calc(53 / 1440 * 100vw);
     font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: calc(16 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
     color: rgba(204, 204, 204, 1);
     color:#787878;
 }
+
 .form__email-input {
     position: absolute;
     width: calc(510 / 1440 * 100vw);
@@ -62,14 +64,13 @@ body {
     vertical-align: top;
     color: #787878;
     font-style: normal;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: calc(28 / 1440 * 100vw);
+    line-height: calc(36 / 1440 * 100vw);
     outline: none;
     font-weight: 700;
     padding-left: 15px;
     padding-top: 7px;
-    padding-bottom: 6px;
-    
+    padding-bottom: 6px; 
 }
 
 .form__email-input::placeholder {
@@ -100,8 +101,8 @@ body {
     border: 2px solid rgba(120, 120, 120, 1);
     text-align: left;
     vertical-align: top;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: calc(28 / 1440 * 100vw);
+    line-height: calc(36 / 1440 * 100vw);
     outline: none;
     font-weight: 700;
     color: #787878;
@@ -114,16 +115,14 @@ body {
     color: #CCCCCC;
 }
 
-
-
 .form__checkbox {
     position: relative;
-    width: calc(312 / 1440 * 100vw);
     height: calc(24 / 1440 * 100vw);
     top: calc(258 / 1440 * 100vw);
     left: calc(45 / 1440 * 100vw);
     align-items: center;
 }
+
 .form__checkbox-input {
     width: calc(24 / 1440 * 100vw);
     height: calc(24 / 1440 * 100vw);
@@ -132,23 +131,22 @@ body {
     opacity: 0;
 }
 
- .form__checkbox-label {
-    width: calc(278 / 1440 * 100vw);
+.form__checkbox-label {
     height: calc(16 / 1440 * 100vw);
     top: calc(262 / 1440 * 100vw);
     left: calc(79 / 1440 * 100vw);
     align-items: center;
     text-align: left;
-    vertical-align: top;
-    font-size: 14px;
-    line-height: 16px;
+    vertical-align: 0.5em;
+    font-size: calc(14 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
     outline: none;
     font-weight: 400;
     color: rgba(120, 120, 120, 1);
  }
 
 .form__checkbox-label::before {
-    content: "";
+    content: ' ';
     position: absolute;
     width: calc(24 / 1440 * 100vw);
     height: calc(24 / 1440 * 100vw);
@@ -160,12 +158,12 @@ body {
 }
  
 .form__checkbox-label::after {
-    content: '\2714';
+    content: '✔';
     position: absolute;
     width: calc(24 / 1440 * 100vw);
     height: calc(24 / 1440 * 100vw);
-    left: calc(7 / 1440 * 100vw);
-    top: 0;
+    left: calc(9 / 1440 * 100vw);
+    top: calc(5 / 1440 * 100vw);
     opacity: 0;
 }
 
@@ -183,8 +181,8 @@ body {
     background: rgba(26, 34, 107, 1);
     border-radius: 10px;
     border: none;
-    font-size: 24px;
-    line-height: 16px;
+    font-size: calc(24 / 1440 * 100vw);
+    line-height: calc(16 / 1440 *100vw);
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
     align-items: center;
@@ -196,8 +194,7 @@ body {
         width: calc(728 / 768 * 100vw);
         height: calc(697 / 768 * 100vw);
         top: calc(20 / 768 * 100vw);
-        left: calc(20 / 768 * 100vw);
-        
+        left: calc(20 / 768 * 100vw);   
     }
     .form__title {
         width: calc(138 / 768 * 100vw);
@@ -207,7 +204,8 @@ body {
         box-shadow: none;
     }
     .form__title-heading {
-        font-size: 60px;
+        font-size:calc(60 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
     }
     .form__email-label {
         width: calc(60 / 768 * 100vw);
@@ -215,21 +213,24 @@ body {
         top: calc(101 / 768 * 100vw);
         left: calc(53 / 768 * 100vw);
         color: rgba(120, 120, 120, 1);
-
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
     }
     .form__email-input {
         width: calc(638 / 768 * 100vw);
         height: calc(49 / 768 * 100vw);
         top: calc(125 / 768 * 100vw);
         left: calc(45 / 768 * 100vw);
-        
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
     }
     .form__password-label {
         width: calc(84 / 768 * 100vw);
         height: calc(16 / 768 * 100vw);
         top: calc(187 / 768 * 100vw);
         left: calc(53 / 768 * 100vw);
-        font-size: 24px;
+        font-size:calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
         color: rgba(120, 120, 120, 1);
         opacity: 1;
     }
@@ -238,9 +239,10 @@ body {
         height: calc(49 / 768 * 100vw);
         top: calc(211 / 768 *100vw);
         left: calc(45 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
     }
     .form__checkbox {
-        width: calc(408 / 768 * 100vw);
         height: calc(32 / 768 * 100vw);
         top: calc(279 / 768 * 100vw);
         left: calc(45 / 768 * 100vw);
@@ -251,23 +253,24 @@ body {
         height: calc(32 / 768 * 100vw);
         left: calc(45 / 768 * 100vw);
         top: calc(279 / 768 * 100vw);
-        padding-left: 10px;
         opacity: 0;
     }
     .form__checkbox-label {
-        font-size: 18px;
-        width: calc(358 / 768 * 100vw);
+        font-size: calc(18 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
         height: calc(16 / 768 * 100vw);
         left: calc(87 / 768 * 100vw);
         top: calc(287 / 768 * 100vw);
     }
     .form__checkbox-label::before {
-        content: "";
+        content: '';
         width: calc(32 / 768 * 100vw);
         height: calc(32 / 768 * 100vw);
     }
     .form__checkbox-label::after {
-        content: '\2714';
+        content: '✔';
+        left: calc(9 / 768 * 100vw);
+        top: calc(5 / 768 * 100vw);
     }
     .form__checkbox-input:checked + .form__checkbox-label::after {
         opacity: 1; 
@@ -277,6 +280,7 @@ body {
         height: calc(80 / 768 * 100vw);
         top: calc(375 / 768 * 100vw);
         left: calc(254 / 768 * 100vw);
-        font-size: 32px;
+        font-size: calc(32 / 768 * 100vw);
+        line-height: calc(16 / 768 *100vw);
     }
 }
