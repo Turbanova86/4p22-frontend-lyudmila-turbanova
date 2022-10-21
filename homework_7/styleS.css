@@ -162,8 +162,9 @@ body {
     position: absolute;
     width: calc(24 / 1440 * 100vw);
     height: calc(24 / 1440 * 100vw);
-    left: calc(9 / 1440 * 100vw);
+    font-size: 32px;
     top: calc(5 / 1440 * 100vw);
+    left: calc(3 / 1440 * 100vw);
     opacity: 0;
 }
 
@@ -269,8 +270,9 @@ body {
     }
     .form__checkbox-label::after {
         content: '✔';
-        left: calc(9 / 768 * 100vw);
+        font-size: 32px;
         top: calc(5 / 768 * 100vw);
+        left: calc(3 / 768 * 100vw);
     }
     .form__checkbox-input:checked + .form__checkbox-label::after {
         opacity: 1; 
