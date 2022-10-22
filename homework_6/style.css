@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: lightgoldenrodyellow;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.common-header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(50 89 139 / 66%);
+    z-index: 3;
+    min-width: 50vw;
+}
+
+.decor {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: lightgoldenrodyellow;
+    z-index: 1;
+}
+
+.common-header_h1 {
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    font-size: xx-large;
+    line-height: 3;
+    background: rgb(50 89 139 / 66%);
+    z-index: 2;
+}
+
+.main-section-link {
+    position: fixed;
+    height: 400px;
+    margin: 0;
+    top:200px;
+    border: 1px solid gray;
+    border-left: hidden;
+    border-top: hidden;
+    border-bottom: hidden;
+    line-height: 2em;
+    font-size: 22px;
+    font-weight: 500;
+    min-width: 22vw;
+}
+
+.sidebar {
+    text-align: center;
+    min-width: 22vw;
+}
+
+.main-section-line {
+    position: fixed;
+    height: 50px;
+    background-color: rgb(230, 233, 238);
+    border: 1px solid rgb(91, 91, 95);
+    border-radius: 3px;
+    left: 27vw;
+    top: 130px;
+    color: black;
+    z-index: 2;
+    min-width: 50vw;
+}
+
+.main-section-line__alphabet {
+    display: flex;
+    list-style-type: none;
+    text-indent: 1.5vw;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.5em;
+    min-width: 40vw;
+}
+
+.main-section-line__letter {
+    color:black;
+    text-decoration: none;
+    min-width: 3vw;
+}
+
+.main-section-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 27vw;
+    top: 200px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.main-section-content .element,
+.main-section-link .element {
+    list-style-type: none;
+    line-height: 2em;
+    font-size: 20px;
+}
+
+.main-section-content__heading {
+    position: sticky;
+    top: 200px;
+    height: 30px;
+    background-color:gray;
+    list-style: none;
+    width: 50vw;
+}
+
+
+
