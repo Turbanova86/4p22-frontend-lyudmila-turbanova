@@ -185,6 +185,8 @@ body {
     color: #787878; 
 }
 
+/* при пробуемых вариантах кнопка все равно смещается при сужении  */
+
 .form__radio {
     position: relative;
     display: flex;
