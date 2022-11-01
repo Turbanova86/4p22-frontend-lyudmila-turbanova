@@ -6,19 +6,28 @@ console.log('calculator'.toUpperCase());
 const btnCalc = document.getElementById('btnCalc');
 
 btnCalc.addEventListener('click', (event) => {
-    
+    event.preventDefault();
     const firstNum = document.getElementById('firstNum').value;
     const operator = document.getElementById('operator').value;
     const secondNum = document.getElementById('secondNum').value;
     let result;
-    event.preventDefault();
 
     switch(operator) {
-        case '+': result = Number(firstNum) + Number(secondNum); break;
-        case '-': result = Number(firstNum) - Number(secondNum); break;
-        case '*': result = Number(firstNum) * Number(secondNum); break;
-        case '/': result = Number(firstNum) / Number(secondNum); break;
-        default: result = 'Программа не поддерживает такую операцию'; break;
+        case '+': 
+            result = Number(firstNum) + Number(secondNum); 
+            break;
+        case '-': 
+            result = Number(firstNum) - Number(secondNum); 
+            break;
+        case '*': 
+            result = Number(firstNum) * Number(secondNum); 
+            break;
+        case '/':
+            result = Number(firstNum) / Number(secondNum); 
+            break;
+        default: 
+            result = 'Программа не поддерживает такую операцию'; 
+            break;
     }
 
     if (firstNum === '') {
