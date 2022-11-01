@@ -1,16 +1,17 @@
 'use strict';
 
-console.log('calculator'.toUpperCase());
 const str = 'calculator';
+console.log('calculator'.toUpperCase());
 
 const btnCalc = document.getElementById('btnCalc');
 
 btnCalc.addEventListener('click', (event) => {
-    event.preventDefault();
+    
     const firstNum = document.getElementById('firstNum').value;
     const operator = document.getElementById('operator').value;
     const secondNum = document.getElementById('secondNum').value;
     let result;
+    event.preventDefault();
 
     switch(operator) {
         case '+': result = Number(firstNum) + Number(secondNum); break;
@@ -35,8 +36,24 @@ btnCalc.addEventListener('click', (event) => {
     if (isNaN(firstNum) || isNaN(secondNum)) {
         result = 'Некорректный ввод чисел';
     }
+   
+    if (operator === '/' && (firstNum) === '0' && (secondNum) === '0') {
+        result = 'Операция некорректна';
+    }
+
+    if (operator === '/' && (secondNum === '0')) {
+        result = 'Операция некорректна';
+    }
     
-    if (operator === '/' && (firstNum) || (secondNum) === 0) {
+    if (operator === '' && (firstNum) === '') {
+        result = 'Операция некорректна';
+    }
+
+    if (operator === '' && (secondNum) === '') {
+        result = 'Операция некорректна';
+    }
+
+    if (operator === '+','-' && (firstNum === '') && (secondNum === '')) {
         result = 'Операция некорректна';
     }
 
